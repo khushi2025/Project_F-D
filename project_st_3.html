@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>st3 project</title>
+    <style>
+    body{
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.7));
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding: 0;
+    width:100%;
+    height: 100%;
+    color:white;
+    height:100%;
+
+}
+.header{
+    text-align: center;
+}
+.images{
+    display:flex;
+   justify-content:column;
+   flex-wrap: wrap;
+   margin-left: 170px;
+}
+#para{
+    background-color: white;
+    width: max-content;
+    padding: 5px;
+    color: black;
+}
+.images p{
+    margin-left: 35px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 id="heading">Weight Calculator</h1>
+    </div>
+    <div>
+      <p>Enter Your Weight Here!</p>
+      <p>On Earth You Weigh</p>
+      <input type="text" id="text1">
+      <p>On this planet you would weight</p>
+      <p id="para">Your weight will be:</p>
+    </div>
+    <div class="images">
+        <div >
+            <button onclick="f1()" id="bttn">
+                <img src="images/mercury.png" id="mercury" height="200px"/>
+               </button>
+               <p>Mercury</p>
+        </div>
+      <div>
+        <button onclick="f2()">
+           <img src="images/venus.png" id="venus"  height="200px"/>
+        </button>
+        <p>Venus</p>
+        </div>
+        <div>
+        <button onclick="f3()" >
+            <img src="images/earth.png" id="earth"  height="200px"/>
+        </button>
+        <p>Earth</p>
+        </div>
+        <div>
+        <button onclick="f4()">
+            <img src="images/mars.png" id="mars"  height="200px"/>
+        </button>
+        <p>Mars</p>
+        </div>
+        <div>
+        <button onclick="f5()">
+            <img src="images/jupiter.png" id="jupiter"  height="200px"/>
+        </button>
+        <p>Jupiter</p>
+        </div>
+        <div>
+        <button onclick="f6()">
+            <img src="images/saturn.png" id="saturn"  height="200px"/>
+        </button>
+        <p>Saturn</p>
+        </div>
+        <div>
+        <button onclick="f7()">
+            <img src="images/uranus.png" id="uranus"  height="200px"/>
+        </button>
+        <p>Uranus</p>
+        </div>
+        <div>
+        <button onclick="f8()">
+            <img src="images/neptune.png" id="neptune"  height="200px"/>
+        </button>
+        <p>Neptune</p>
+</div>
+</div>
+</body>
+<script>
+   var x= prompt('Enter your name:');
+    document.getElementById('heading').innerHTML= "Weight Calculator for "+ x;
+    function f1(){
+        var p=document.getElementById('para');
+        var n=document.getElementById('text1').value;
+        var a=parseFloat(n);
+        var weight=a*.38;
+        p.innerHTML=weight;
+        var img=document.getElementById('mercury');
+        img.style.height="230px";
+      
+    }
+    function f2(){
+        var p=document.getElementById('para');
+        var n=document.getElementById('text1').value;
+        var a=parseFloat(n);
+        var weight=a*.91;
+        p.innerHTML=weight;
+        var img=document.getElementById('venus');
+        img.style.height="230px";
+
+    }
+
+    function f3(){
+        var p=document.getElementById('para');
+        var n=document.getElementById('text1').value;
+        var a=parseFloat(n);
+        var weight=a*1;
+        p.innerHTML=weight;
+        var img=document.getElementById('earth');
+        img.style.height="230px";
+    }
+    
+    function f4(){
+        var p=document.getElementById('para');
+        var n=document.getElementById('text1').value;
+        var a=parseFloat(n);
+        var weight=a*.38;
+        p.innerHTML=weight;
+        var img=document.getElementById('mars');
+        img.style.height="230px";
+    }
+    function f5(){
+        var p=document.getElementById('para');
+        var n=document.getElementById('text1').value;
+        var a=parseFloat(n);
+        var weight=a* 2.34;
+        p.innerHTML=weight;
+        var img=document.getElementById('jupiter');
+        img.style.height="230px";
+    }
+    function f6(){
+        var p=document.getElementById('para');
+        var n=document.getElementById('text1').value;
+        var a=parseFloat(n);
+        var weight=a* .93;
+        p.innerHTML=weight;
+        var img=document.getElementById('saturn');
+        img.style.height="230px";
+    }
+    function f7(){
+        var p=document.getElementById('para');
+        var n=document.getElementById('text1').value;
+        var a=parseFloat(n);
+        var weight=a*.92;
+        p.innerHTML=weight;
+        var img=document.getElementById('uranus');
+        img.style.height="230px";
+    }
+
+    function f8(){
+        var p=document.getElementById('para');
+        var n=document.getElementById('text1').value;
+        var a=parseFloat(n);
+        var weight=a*1.12;
+        p.innerHTML=weight;
+        var img=document.getElementById('neptune');
+        img.style.height="230px";
+    }
+</script>
+</html>

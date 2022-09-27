@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link rel="icon" href="profile.ico"/>
+        <meta charset="utf-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+        <style>
+            header{
+                background-color: rgb(176, 241, 176);
+                color: rgb(125, 197, 125);
+                margin: 20px;
+                padding: 40px;
+                text-align: center;
+            }
+            main>h2{
+                color: blue;
+                font-family:'Nanum Pen Script', cursive;
+                text-align: center;
+                margin-top: 60px;
+
+            }
+            main>div{
+                background-color: rgb(176, 241, 176);
+                padding: 20px 50px;
+                /* margin: 20px; */
+                
+            }
+            #element1{
+                height: 110px;
+                width:100px;
+                text-align: center;
+                background-color: rgb(163, 139, 189);
+                color:rgb(96, 76, 118);
+                margin:2px;
+                border-radius:10px;
+            }
+            #element2{
+                height: 100px;
+                width:100px;
+                text-align: center;
+                border:5px solid rgb(68, 132, 68);
+                background-color: white;
+                color: rgb(125, 197, 125);
+                margin:2px;
+                border-radius:10px;
+            }
+            /* main{ 
+                margin-bottom: -20px;
+
+            /* } */
+            #element3{
+                height: 100px;
+                width:100px;
+                text-align: center;
+                background-color: rgb(207, 207, 207);
+                color: rgb(125, 197, 125);
+                padding-top: 15px;
+                margin:2px;
+                border-radius:10px;
+            }
+            main .parent{
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            section>p{
+                border: 6px solid rgb(10, 82, 196);
+                text-align: center;
+                font-size: 30px;
+                padding: 10px 0px;
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>This div has 20px on either side.</p>
+        </header>
+        <main>
+            <h2>This is my pretty webfont!</h2>
+            <div class="parent">
+                <div id="element1"><a href="https://www.facebook.com/" target="_blank">Element 1</a></div>
+                <div id="element2"><p>Element 2</p></div>
+                <div id="element3"><p>Element 3</p></div>
+            </div>
+        </main>
+        <section>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+        </section>
+    </body>
+</html>
